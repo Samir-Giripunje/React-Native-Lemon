@@ -2,16 +2,17 @@ import * as React from 'react';
 import { View, StyleSheet } from 'react-native';
 
 import LittleLemonHeader from './components/LittleLemonHeader';
-// import LittleLemonFooter from './components/LittleLemonFooter';
+import LittleLemonFooter from './components/LittleLemonFooter';
 // import MenuItems from './components/MenuItems'; 
 import LoginScreen from './components/loginpage';
-import WelcomeScreen from './components/form';
+// import WelcomeScreen from './components/form';
 export default function App() {
   return (
     <>
       <View style={styles.container}>
         <LittleLemonHeader />
         <LoginScreen/>
+        <LittleLemonFooter />
       </View>
       <View style={styles.footerContainer}>
       </View>
@@ -21,7 +22,6 @@ export default function App() {
 
         // <WelcomeScreen/>
         // <MenuItems />
-        // <LittleLemonFooter />
 const styles = StyleSheet.create({
   container: {
     flex: 1,
