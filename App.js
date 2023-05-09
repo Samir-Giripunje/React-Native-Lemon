@@ -4,14 +4,15 @@ import { View, StyleSheet } from 'react-native';
 import LittleLemonHeader from './components/LittleLemonHeader';
 import LittleLemonFooter from './components/LittleLemonFooter';
 // import MenuItems from './components/MenuItems'; 
-import LoginScreen from './components/loginpage';
+// import LoginScreen from './components/loginpage';
 // import WelcomeScreen from './components/form';
-export default function App() {
+import Welcome from './components/imgpage';
+ export default function App() {
   return (
     <>
       <View style={styles.container}>
         <LittleLemonHeader />
-        <LoginScreen/>
+        <Welcome/>
         <LittleLemonFooter />
       </View>
       <View style={styles.footerContainer}>
@@ -20,6 +21,7 @@ export default function App() {
   );
 }
 
+        // <LoginScreen/>
         // <WelcomeScreen/>
         // <MenuItems />
 const styles = StyleSheet.create({
