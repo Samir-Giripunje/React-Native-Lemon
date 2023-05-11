@@ -1,14 +1,43 @@
 import React from 'react';
-import { View, Image, StyleSheet, Text } from 'react-native';
+import { View, Image, StyleSheet, Text, ScrollView } from 'react-native';
 
 const Welcome = () => {
   return (
-    <View style={styles.container}>
-      <Image style={styles.logo} source={require('../images/littleLemonLogo.png')} />
+    <ScrollView style={styles.container}>
+      <Image 
+        style={styles.logo}
+        source={require('../images/littleLemonLogo.png')}
+        resizeMode='contain'
+        accessible={true}
+        accessibilityLabel='Little Lemon Logo'
+      />
       <Text style={styles.title}>
         Little Lemon, your local Mediterranean Bistro
       </Text>
-    </View>
+      <Image
+        style={styles.image}
+        source={require('../images/food1.jpeg')}
+        resizeMode='contain'
+        accessible={true}
+        accessibilityLabel='food1'
+      />
+      <Image
+        style={styles.image}
+        source={require('../images/food2.jpeg')}
+        resizeMode='contain'
+        accessible={true}
+        accessibilityLabel='food2'
+      />
+     
+<Image
+        style={styles.image}
+        source={require('../images/food4.jpeg')}
+        resizeMode='contain'
+        accessible={true}
+        accessibilityLabel='food4'
+      />
+
+    </ScrollView>
   );
 };
 
@@ -20,11 +49,16 @@ const styles = StyleSheet.create({
   },
   container: {
     flex: 1,
-    padding: 24,
+    padding: 12,
     // marginTop: 25,
     backgroundColor: '#fff',
   },
-
+ image: {
+    width: 350,
+    height: 250,
+    borderRadius: 10,
+    paddingTop: 20,
+  },
   title: {
     marginTop: 16,
     paddingVertical: 10,
