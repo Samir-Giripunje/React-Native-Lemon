@@ -11,33 +11,12 @@ const Welcome = () => {
         accessible={true}
         accessibilityLabel='Little Lemon Logo'
       />
-      <Text style={styles.title}>
-        Little Lemon, your local Mediterranean Bistro
-      </Text>
-      <Image
-        style={styles.image}
-        source={require('../images/food1.jpeg')}
-        resizeMode='contain'
-        accessible={true}
-        accessibilityLabel='food1'
-      />
-      <Image
-        style={styles.image}
-        source={require('../images/food2.jpeg')}
-        resizeMode='contain'
-        accessible={true}
-        accessibilityLabel='food2'
-      />
-     
-<Image
-        style={styles.image}
-        source={require('../images/food4.jpeg')}
-        resizeMode='contain'
-        accessible={true}
-        accessibilityLabel='food4'
-      />
-
-    </ScrollView>
+       <Text style={styles.infoSection}>
+          Little Lemon is a charming neighborhood bistro that serves simple food
+          and classic cocktails in a lively but casual environment. View our
+          menu to explore our cuisine with daily specials!
+        </Text>
+         </ScrollView>
   );
 };
 
